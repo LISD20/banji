@@ -18,6 +18,6 @@ function autoloadFunkce($trida) {
 // !Pod PHP 5.2 nutné nahradit za starší funkci __autoload()
 spl_autoload_register("autoloadFunkce"); // Říká PHP, aby naši funkci vykonávalo jako autoloader
 
-
-
-
+// Vytvoření routeru a zpracování parametrů od uživatele z URL
+$smerovac = new SmerovacKontroler();
+$smerovac->zpracuj(array($_SERVER['REQUWST_URI']));
