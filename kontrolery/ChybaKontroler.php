@@ -8,6 +8,8 @@ class ChybaKontroler extends Kontroler {
         header("HTTP/1.0 404 Not Found");
         //Hlavička stránky
         $this->hlavicka['titulek'] = 'Chyba 404';
+        //Nadpis stránky
+        $this->hlavicka['nadpis'] = 'Chyba';
         //Nastavení šablony
         $this->pohled = 'chyba';
     }

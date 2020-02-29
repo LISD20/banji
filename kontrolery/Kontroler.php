@@ -6,7 +6,7 @@
 abstract class Kontroler {
     protected $data = array(); // Pole s daty od modelů. To se předá pohledu a ten vykreslí uživateli.
     protected $pohled = ""; // Název pohledu, který se má vypsat.
-    protected $hlavicka = array('titulek' => '', 'klicova_slova' => '', 'popis' => '');
+    protected $hlavicka = array('titulek' => '', 'klicova_slova' => '', 'popis' => '', 'nadpis' =>'');
     
     //Vyrenderuje pohled uživateli
     public function vypisPohled(){
