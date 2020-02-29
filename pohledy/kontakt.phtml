@@ -25,13 +25,10 @@
 					</div>
 				</div>
 				<div class="col-lg-9">
-					<form class="contact-form">
+                                        <form class="contact-form" method="post" id="form-email">
 						<div class="row">
 							<div class="col-md-6">
-								<input type="text" placeholder="Zadejte jméno">
-							</div>
-							<div class="col-md-6">
-								<input type="text" placeholder="Zadejte svůj email">
+                                                            <input type="email" name="email" placeholder="Zadejte svůj email" required="required" value="<?php if (isset($_POST['email'])) echo(htmlspecialchars($_POST['email'])); ?>">
 							</div>
 							<div class="col-md-12">
                                                             <input type="text" name="predmet" placeholder="Předmět" required="required" value="<?php if (isset($_POST['predmet'])) echo(htmlspecialchars($_POST['predmet'])); ?>">
