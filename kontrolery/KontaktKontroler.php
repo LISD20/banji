@@ -23,7 +23,7 @@ class KontaktKontroler extends Kontroler {
                 $odesilacEmailu = new OdesilacEmailu();
                 $odesilacEmailu->odesli("plenca@gmail.com", $_POST['predmet'], $_POST['zprava'], $_POST['email']);
             }
-            else 
+            else
                 echo '';
         }
         $this->pohled = 'kontakt';

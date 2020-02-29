@@ -44,7 +44,7 @@ class SmerovacKontroler extends Kontroler {
        $naparsovanaURL = $this->parsujURL($parametry[0]);
        
        // Pokud není zadán žádný kontroler (první parametr url je prázdný/chybí) přesměruje na domů
-       if (empty($naparsovanaURL[0]))   
+       if (empty($naparsovanaURL[0]))
            $this->presmeruj ('domu.html'); //!!! zkusit vymyslte elegantněnjší řešení
        /*
         * Kontroler je 1. parametr URL
