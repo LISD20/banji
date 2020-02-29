@@ -33,10 +33,10 @@ class SmerovacKontroler extends Kontroler {
          * a ty vrátí v poli.
          */
         $naparsovanaURL = parse_url($url);
-        $naparsovanaURL["path"] = ltrim($naparsovanaURL["path"], "");
-        $naparsovanaURL["path"] = trim($naparsovanaURL["path"], "/");
+        $naparsovanaURL["path"] = ltrim($naparsovanaURL["path"], "/");
+        $naparsovanaURL["path"] = trim($naparsovanaURL["path"]);
         $rozdelenaCesta = explode("/", $naparsovanaURL["path"]);
-        return $naparsovanaURL;
+        return $rozdelenaCesta;
     }
 
     // Implementace abstraktní metody zpracuj

@@ -11,7 +11,7 @@ mb_internal_encoding("UTF-8");
 function autoloadFunkce($trida) {
     //Končí název třídy řetězcem "Kontroler"? Pokud ne, jedná se o model.
     if (preg_match('/Kontroler$/', $trida))
-        require "kontrolery" . $trida . ".php";
+        require "kontrolery/" . $trida . ".php";
     else
         require "modely/" . $trida . ".php";
 }
@@ -20,4 +20,4 @@ spl_autoload_register("autoloadFunkce"); // Říká PHP, aby naši funkci vykon�
 
 // Vytvoření routeru a zpracování parametrů od uživatele z URL
 $smerovac = new SmerovacKontroler();
-$smerovac->zpracuj(array($_SERVER['REQUWST_URI']));
+$smerovac->zpracuj(array($_SERVER['REQUEST_URI']));
