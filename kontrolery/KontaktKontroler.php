@@ -1,8 +1,20 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+class KontaktKontroler extends Kontroler {
+    public function zpracuj($parametry) {
+        $this->hlavicka = array (
+            'titulek' => 'Kontaktní formulář',
+            'klicova_slova' => 'kontakt, email, formulář',
+            'popis' => 'Kontaktní formulář našeho webu.',
+            'nadpis' => 'Kontaktní formulář'
+        );
+        
+        if (isset($_POST["email"])) {
+            if ($_POST['rok'] == date("Y")) {
+                $odesilacEmailu = new OdesilacEmailu();
+                $odesilacEmailu->odesli("plenca@gmail.com", $_POST['predmet'], $_POST['zprava'], $_POST['email']);
+            }
+        }
+        $this->pohled = 'kontakt';
+    }
+}

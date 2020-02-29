@@ -25,20 +25,20 @@
 					</div>
 				</div>
 				<div class="col-lg-9">
-					<form class="contact-form">
+                                        <form class="contact-form" method="post" id="form-email">
 						<div class="row">
 							<div class="col-md-6">
-								<input type="text" placeholder="Zadejte jméno">
-							</div>
-							<div class="col-md-6">
-								<input type="text" placeholder="Zadejte svůj email">
+                                                            <input type="email" name="email" placeholder="Zadejte svůj email" required="required" value="<?php if (isset($_POST['email'])) echo(htmlspecialchars($_POST['email'])); ?>">
 							</div>
 							<div class="col-md-12">
-								<input type="text" placeholder="Předmět">
-								<textarea placeholder="Napište nám"></textarea>
-								<button class="site-btn">Poslat</button>
+                                                            <input type="text" name="predmet" placeholder="Předmět" required="required" value="<?php if (isset($_POST['predmet'])) echo(htmlspecialchars($_POST['predmet'])); ?>">
+                                                            <textarea name="zprava" placeholder="Napište nám"><?php if (isset($_POST['zprava'])) echo(htmlspecialchars($_POST['zprava'])); ?></textarea>
+                                                            <input type="number" name="rok" required="required" placeholder="zadej rok" /><br />
+                                                            <button type="submit" class="site-btn">Odeslat</button>
+                                                            
 							</div>
 						</div>
+                                            <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>
 					</form>
 				</div>
 			</div>
