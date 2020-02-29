@@ -21,3 +21,6 @@ spl_autoload_register("autoloadFunkce"); // Říká PHP, aby naši funkci vykon�
 // Vytvoření routeru a zpracování parametrů od uživatele z URL
 $smerovac = new SmerovacKontroler();
 $smerovac->zpracuj(array($_SERVER['REQUEST_URI']));
+
+//Vyrenderování šablony
+$smerovac->vypisPohled();

@@ -42,7 +42,13 @@ class SmerovacKontroler extends Kontroler {
     // Implementace abstraktní metody zpracuj
     public function zpracuj($parametry) {
        $naparsovanaURL = $this->parsujURL($parametry[0]);
+       
+       // Pokud není zadán žádný kontroler (první parametr url je prázdný/chybí) přesměruje na domů
+       if (empty($naparsovanaURL[0]))   
+           $this->presmeruj ('clanek/uvod'); //!!! ZDE MUSÍŠ PŘEPSAT, ABY SMĚROVALO NA DOMOVKSOU STRÁNKU
        /*
+        * Kontroler je 1. parametr URL
+        * 
         * array_shift
         * 
         * odebere první prvek z pole a posune ostatní dpředu 
@@ -50,9 +56,24 @@ class SmerovacKontroler extends Kontroler {
         */
        $tridaKontroleru = $this->pomlckyDoVelbloudiNotace(array_shift($naparsovanaURL)) . 'Kontroler';
        
-       echo $tridaKontroleru;
-       echo "<br />";
-       print_r($naparsovanaURL);
+       /*
+        * Kontrola, zda existuje třída (Kontroler) daného jména. Pokud ano,
+        * tak tvoříme jeho instanci. Pokud ne, přesměrujeme na chybovou stránku.
+        */
+       if (file_exists('kontrolery/' . $tridaKontroleru . '.php'))
+           $this->kontroler = new $tridaKontroleru;
+       else
+           $this->presmeruj ('chyba');
+       // Na vnořeném kontroleru zavoláme metodu zpracuj a necháme ho provést jeho logiku
+       $this->kontroler->zpracuj($naparsovanaURL);
+       
+       //Nastavení proměný pro šablonu
+       $this->data['titulek'] = $this->kontroler->hlavicka['titulek'];
+       $this->data['popis'] = $this->kontroler->hlavicka['popis'];
+       $this->data['klicova_slova'] = $this->kontroler->hlavicka['klicova_slova'];
+       
+       //Nastavení hlavní šablony
+       $this->pohled = 'rozlozeni';
     }
 }
 
