@@ -1,0 +1,15 @@
+<!-- Registrace -->
+<form action="reg_kontrola.php" method="POST">
+    <table align="center" style="font-size:12px">
+        <tr><td>Jméno: </td><td><input type="text" name="name"></td></tr>
+        <tr><td>Příjmení: </td><td><input type="text" name="surname"></td></tr>
+        <tr><td>E-mail: </td><td><input type="text" name="email"></td></tr>
+        <tr><td>Heslo: </td><td><input type="password" name="password"></td></tr>
+        <tr><td>Heslo znovu: </td><td><input type="password" name="password2"></td></tr>
+        <tr><td colspan="2" align="center"> <a href="./pridat_dite.html"><input type="submit" name="submit1" value= "Pokračovat" ></td></tr>
+        <!-- Toto si dej pod svoje tlačítko -->
+        <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>            
+    </table>                  
+</form>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Registrace END -->
