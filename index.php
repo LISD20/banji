@@ -19,3 +19,5 @@ function autoloadFunkce($trida) {
 spl_autoload_register("autoloadFunkce"); // Říká PHP, aby naši funkci vykonávalo jako autoloader
 
 
+
+
