@@ -32,14 +32,13 @@
 							</div>
 							<div class="col-md-12">
                                                             <input type="text" name="predmet" placeholder="Předmět" required="required" value="<?php if (isset($_POST['predmet'])) echo(htmlspecialchars($_POST['predmet'])); ?>">
-                                                            <textarea name="zprava" placeholder="Napište nám"><?php if (isset($_POST['zprava'])) echo(htmlspecialchars($_POST['zprava'])); ?></textarea>
-                                                            <input type="number" name="rok" required="required" placeholder="zadej rok" /><br />
+                                                            <textarea name="zprava" placeholder="Napište nám"><?php if (isset($_POST['zprava'])) echo(htmlspecialchars($_POST['zprava'])); ?></textarea>  
                                                             <button type="submit" class="site-btn">Odeslat</button>
-                                                            
+                                                            <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>
 							</div>
 						</div>
-                                            <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>
 					</form>
+                                    <script src='https://www.google.com/recaptcha/api.js'></script>
 				</div>
 			</div>
 		</div>

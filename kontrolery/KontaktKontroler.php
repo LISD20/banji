@@ -9,11 +9,22 @@ class KontaktKontroler extends Kontroler {
             'nadpis' => 'Kontaktní formulář'
         );
         
-        if (isset($_POST["email"])) {
-            if ($_POST['rok'] == date("Y")) {
+        if (isset($_POST['submit'])) {
+            $email = $_POST['email'];
+            $secretKey = "6LeAft0UAAAAADlxCYJExbb0A9-SMkPHTwseqdaQ";
+            $responseKey = $_POST['g-recaptcha-response'];
+            $userIP = $_SERVER['REMOTE_ADDR'];
+            
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
+            $response = file_get_contents($url);
+            $response = json_decode($response);
+            
+            if ($response->success) {
                 $odesilacEmailu = new OdesilacEmailu();
                 $odesilacEmailu->odesli("plenca@gmail.com", $_POST['predmet'], $_POST['zprava'], $_POST['email']);
             }
+            else 
+                echo '';
         }
         $this->pohled = 'kontakt';
     }
