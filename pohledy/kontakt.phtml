@@ -1,0 +1,46 @@
+<section class="contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 contact-text">
+					<h4>Napište nám</h4>
+					<p>Nullam lacinia ex eleifend orci portt-itor, suscipit interdum augue condi-mentum. Etiam pretium turpis eget nibh laoreet iaculis. Vivamus auctor mi eget odio feugiat.</p>
+					<div class="cont-info">
+						<div class="ci-icon">
+							<img src="img/icons/1.png" alt="">
+						</div>
+						<span>Žižkovo nám. 5, Olomouc</span>
+					</div>
+					<div class="cont-info">
+						<div class="ci-icon">
+							<img src="img/icons/2.png" alt="">
+						</div>
+						<span>	585 635 102 </span> <br>
+                        <span>	Vlasta Gáborová, sekretářka katedry</span>
+					</div>
+					<div class="cont-info">
+						<div class="ci-icon">
+							<img src="img/icons/2.png" alt="">
+						</div>
+						<span>vlasta.gaborova@upol.cz</span>
+					</div>
+				</div>
+				<div class="col-lg-9">
+                                        <form class="contact-form" method="post" id="form-email">
+						<div class="row">
+							<div class="col-md-6">
+                                                            <input type="email" name="email" placeholder="Zadejte svůj email" required="required" value="<?php if (isset($_POST['email'])) echo(htmlspecialchars($_POST['email'])); ?>">
+							</div>
+							<div class="col-md-12">
+                                                            <input type="text" name="predmet" placeholder="Předmět" required="required" value="<?php if (isset($_POST['predmet'])) echo(htmlspecialchars($_POST['predmet'])); ?>">
+                                                            <textarea name="zprava" placeholder="Napište nám"><?php if (isset($_POST['zprava'])) echo(htmlspecialchars($_POST['zprava'])); ?></textarea>  
+                                                            <button type="submit" class="site-btn">Odeslat</button>
+                                                            <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>
+							</div>
+						</div>
+					</form>
+                                    <script src='https://www.google.com/recaptcha/api.js'></script>
+				</div>
+			</div>
+		</div>
+		<div class="map" id="map-canvas"></div>
+	</section>
