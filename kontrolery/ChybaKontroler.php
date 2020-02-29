@@ -3,7 +3,7 @@
  * Kontroler pro chybovou stránku
  */
 class ChybaKontroler extends Kontroler {
-    public function zpracuj($prametry) {
+    public function zpracuj($parametry) {
         //Hlavička požadavku
         header("HTTP/1.0 404 Not Found");
         //Hlavička stránky
