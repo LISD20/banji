@@ -17,22 +17,25 @@ class OdesilacEmailu {
     public function odesliPoKontroleRobota($komu, $predmet, $zprava, $od) {
         // Test na straně google
         if ($od) {
-        #$username = $od;
-        $secretKey = "6LeAft0UAAAAADlxCYJExbb0A9-SMkPHTwseqdaQ";
-        $responseKey = $_POST['g-recaptcha-response'];
-        $userIP = $_SERVER['REMOTE_ADDR'];
+            echo 'Začátek google podmínky';    
+            #$username = $od;
+            $secretKey = "6Lfcpd0UAAAAACRmNlKjmQjtPc80ioWQOOjsOsvC";
+            $responseKey = $_POST['g-recaptcha-response'];
+            $userIP = $_SERVER['REMOTE_ADDR'];
+            #print_r($responseKey);
 
-        $urlTest = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
-        $response = file_get_contents($urlTest);
-        $response = json_decode($response);
-        
-        // Podmínky
-        if ($response->success) {
-            $this->odesli($komu, $predmet, $zprava, $od);
-        }
-        else {
-            throw new ChybaUzivatele('Skutečně nejsi robot?');
-        }
+            $urlTest = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
+            $response = file_get_contents($urlTest);
+            $response = json_decode($response);
+            print_r($response);
+            // Podmínky
+            if ($response->success) {
+                echo 'Tělo podmínky';
+                //$this->odesli($komu, $predmet, $zprava, $od);
+            }
+            else
+                echo 'Google neprošel';
+            echo 'Text por podmínkou.';
         }   
     }
 }

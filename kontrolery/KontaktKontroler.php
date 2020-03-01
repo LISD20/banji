@@ -14,10 +14,10 @@ class KontaktKontroler extends Kontroler {
                 $odesilacEmailu = new OdesilacEmailu();
                 $odesilacEmailu->odesliPoKontroleRobota("plenca@gmail.com", $_POST['predmet'], $_POST['zprava'],$_POST['email']);
                 #$this-> //Dopsat zaslání zprávy o úspěšném odeslání.
-                $this->presmeruj('kontakt');
+                #$this->presmeruj('kontakt');
             } 
             catch (Exception $ex) {
-                //Zde zpráva o chybě
+                echo 'Chyba';
             }
         }
         $this->pohled = 'kontakt';
