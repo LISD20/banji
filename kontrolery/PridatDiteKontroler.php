@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 class PridatDiteKontroler extends Kontroler {
     public function zpracuj($parametry) {
