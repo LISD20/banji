@@ -1434,6 +1434,7 @@ ol {
 
 .contact-form input[type=text],
 .contact-form input[type=email],
+.contact-form input[type=password],
 .contact-form textarea {
 	width: 100%;
 	height: 56px;
