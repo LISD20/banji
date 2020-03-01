@@ -59,6 +59,11 @@ p {
 	color: #585858;
 	line-height: 2;
 }
+.p2 {
+    font-size: 25px;
+    color: #585858;
+    line-height: 2;
+}
 
 img {
 	max-width: 100%;
