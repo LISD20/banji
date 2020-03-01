@@ -1,15 +1,87 @@
-<!-- Registrace -->
-<form action="reg_kontrola.php" method="POST">
-    <table align="center" style="font-size:12px">
-        <tr><td>JmÃ©no: </td><td><input type="text" name="name"></td></tr>
-        <tr><td>PÅ™Ã­jmenÃ­: </td><td><input type="text" name="surname"></td></tr>
-        <tr><td>E-mail: </td><td><input type="text" name="email"></td></tr>
-        <tr><td>Heslo: </td><td><input type="password" name="password"></td></tr>
-        <tr><td>Heslo znovu: </td><td><input type="password" name="password2"></td></tr>
-        <tr><td colspan="2" align="center"> <a href="./pridat_dite.html"><input type="submit" name="submit1" value= "PokraÄovat" ></td></tr>
-        <!-- Toto si dej pod svoje tlaÄÃ­tko -->
-        <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>            
-    </table>                  
-</form>
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<!-- Registrace END -->
+<section class="contact-section">
+    <div class="container">
+        <div class="section-title">
+            <img src="./img/section-title-icon.png" alt="#">
+            <p>Banji</p>
+            <h2>Registrace do portálu</h2>
+        </div>
+    </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+        <div class="col-4">
+    </div>
+    <div class="col-sm">
+        <form class="contact-form" method="post">
+        <div class="row">
+    <div class="col-md-6">
+    <label for="exampleInputName1">Vaše jméno:</label>
+      <input type="text" class="form-control"  placeholder="Jméno">
+    </div>
+    </div>
+        <div class="row">
+    <div class="col-md-6">
+     <div class="form-group">
+     <label for="exampleInputName2">Vaše pøíjmení:</label>
+      <input type="text" class="form-control" placeholder="Pøíjmení">
+       </div>
+    </div>
+  </div>        
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Vaše emailová adresa:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="vas@email.com">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Vaše heslo:</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="Heslo">
+                          <small id="hesloHelp" class="form-text text-muted">Zadejte alespoò jedno velké písmeno a èíslici.</small>
+                    </div>
+                </div>
+            </div>
+               <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Vaše heslo znovu:</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="Heslo znovu"> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <p>Nejsi robot?</p>
+                        <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Toto udìlat lépe pøes styly -->
+            <div class="row">
+                <div class="offset-sm-1">
+                    <p></p>
+                        <button type="submit" class="site-btn">Pokraèovat</button>
+                    <p></p>
+                </div>
+            </div>
+
+        </form>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- Toto udìlat lépe pøes styly -->
+        <div class="row"><p></p></div>
+          
+        <!-- Sekce s odkazy -->
+   
+        </div>
+    </div>
+  </div>
+    <!-- Odsazení na konci stránky-->
+    <div class="spad">  
+    </div>
+</section>
+
