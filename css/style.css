@@ -523,7 +523,7 @@ ol {
 .header-section {
 	position: absolute;
 	width: 100%;
-	padding-top: 25px;
+	padding-top: 0px;
 	z-index: 99;
 }
 
