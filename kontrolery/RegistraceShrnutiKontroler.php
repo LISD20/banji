@@ -6,7 +6,7 @@ class RegistraceShrnutiKontroler extends Kontroler {
             'titulek' => 'Registrace shrnutí',
             'klicova_slova' => 'uživatel, pridat, dite, kod',
             'popis' => 'Stránka sloužící k overeni udajů.',
-            'nadpis' => 'Registrace'
+            'nadpis' => 'Shrnutí registrace'
         );
         $this->pohled = 'registrace-shrnuti';
     }

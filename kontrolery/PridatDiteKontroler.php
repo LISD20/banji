@@ -6,7 +6,7 @@ class PridatDiteKontroler extends Kontroler {
             'titulek' => 'Přidat dítě',
             'klicova_slova' => 'uživatel, pridat, dite, kod',
             'popis' => 'Stránka sloužící k zadani kodu dítěte.',
-            'nadpis' => 'Registrace'
+            'nadpis' => 'Přidat Dítě'
         );
         $this->pohled = 'pridat-dite';
     }
