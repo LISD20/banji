@@ -79,13 +79,23 @@
 		<!-- Top sekce -->
 	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
 		<div class="container">
-			<h2><?= $nadpis ?></h2>
+			<!-- zde byl nadpis <h2><?= $nadpis ?></h2> -->
 		</div>
 	</section>
 	<!-- Top sekce END -->
 
 
 	<!-- Tělo stránky -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <img src="./img/section-title-icon.png" alt="#">
+                    <p>Banji</p>
+                    <h2><?= $nadpis ?></h2>
+                </div>
+            </div>
+        </section>
+        
         <article>
             <?php $this->kontroler->vypisPohled(); ?>
         </article>

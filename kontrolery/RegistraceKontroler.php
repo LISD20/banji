@@ -6,7 +6,7 @@ class RegistraceKontroler extends Kontroler {
             'titulek' => 'Registrace',
             'klicova_slova' => 'uživatel, registrace, email, heslo, jméno',
             'popis' => 'Stránka sloužící k registraci nových uživatelů.',
-            'nadpis' => 'Registrace'
+            'nadpis' => 'Registrace do portálu'
         );
         $this->pohled = 'registrace';
     }
