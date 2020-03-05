@@ -1,5 +1,9 @@
 <?php
 
+/* 
+ * Třída testuje google rechaptu a vrací zda uživatel je/není robot 
+ */
+
 class TestRobota {
     
     public $chytacRobotu;
@@ -7,9 +11,9 @@ class TestRobota {
     public function zkontrolujZdaToNeniRobot() {
         $secretKey = "6Lfcpd0UAAAAACRmNlKjmQjtPc80ioWQOOjsOsvC";
         $responseKey = $_POST['g-recaptcha-response'];
-        $userIP = $_SERVER['REMOTE_ADDR'];
+        //$userIP = $_SERVER['REMOTE_ADDR'];
 
-        $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
+        $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey"; // &remoteip=$userIP";
         $response = file_get_contents($url);
         $response = json_decode($response);
         if ($response->success) {
@@ -22,9 +26,4 @@ class TestRobota {
         }
     }
 }
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
