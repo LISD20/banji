@@ -72,9 +72,12 @@ class SmerovacKontroler extends Kontroler {
        $this->data['popis'] = $this->kontroler->hlavicka['popis'];
        $this->data['klicova_slova'] = $this->kontroler->hlavicka['klicova_slova'];
        $this->data['nadpis'] = $this->kontroler->hlavicka['nadpis'];
-       
+          
        //Nastavení hlavní šablony
        $this->pohled = 'rozlozeni';
+       
+       //Zprávy pro uživatele, které půjdou do šablony
+       $this->data['zpravy'] = $this->posliZpravy();
     }
 }
 

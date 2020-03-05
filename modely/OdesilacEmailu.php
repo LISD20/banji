@@ -18,7 +18,6 @@ class OdesilacEmailu {
         $kontrola = new TestRobota();
         $vyhodnoceni = $kontrola->zkontrolujZdaToNeniRobot();
        // $kontrola->chytacRobotu;
-        echo $vyhodnoceni;
         
         if ($vyhodnoceni == 'Neni') {
             $this->odesli($komu, $predmet, $zprava, $od);

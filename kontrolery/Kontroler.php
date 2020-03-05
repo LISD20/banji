@@ -22,6 +22,24 @@ abstract class Kontroler {
         header("Connection: close");
         exit();
     }
+    
+    //Přidá zprávu pro uživatele
+    public function pridejZpravu($zprava) {
+        if (isset($_SESSION['zpravy']))
+            $_SESSION['zpravy'][] = $zprava;
+        else
+            $_SESSION['zpravy'] = array($zprava);
+    }
+    //Pošle zprávy uživateli
+    public function posliZpravy() {
+        if (isset($_SESSION['zpravy'])) {
+            $zpravy = $_SESSION['zpravy'];
+            unset($_SESSION['zpravy']);
+            return $zpravy;
+        }
+        else
+            return array();
+    }
 
     //Hlavní metoda kontroleru => každý konroler si ji zpracovává sám, proto je abstraktní 
     abstract function zpracuj($parametry);

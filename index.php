@@ -5,6 +5,10 @@
  * Začíná zde vešekerá komunikace.
  * Sem se budou přesměrovávat veškeré URL adresy
  */
+
+//Bude třeba souhlas s cookies
+session_start();
+
 mb_internal_encoding("UTF-8");
 
 //Automatické načítáhní tříd kontrolerů, ve chvíli, kdy jsou třeba. (netřeba require/incxlude)

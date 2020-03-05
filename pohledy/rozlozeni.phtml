@@ -96,9 +96,17 @@
             </div>
         </section>
         
-        <article>
-            <?php $this->kontroler->vypisPohled(); ?>
-        </article>
+        <section>
+            <?php foreach ($zpravy as $zprava) : ?>
+            <p><?= $zprava ?></p>
+            <?php endforeach; ?>
+        </section>
+        
+        <section>
+            <article>
+                <?php $this->kontroler->vypisPohled(); ?>
+            </article>
+        </section>
 	<!-- Tělo stránky END -->
 
 		<!-- Zápatí top -->
