@@ -5,7 +5,7 @@ class TestRobota {
     public $chytacRobotu;
     
     public function zkontrolujZdaToNeniRobot() {
-        $secretKey = "6LccCSMUAAAAAKkTzemiArEQkQ5hKcgKJG8NQO0-";
+        $secretKey = "6Lfcpd0UAAAAACRmNlKjmQjtPc80ioWQOOjsOsvC";
         $responseKey = $_POST['g-recaptcha-response'];
         $userIP = $_SERVER['REMOTE_ADDR'];
 
@@ -13,7 +13,7 @@ class TestRobota {
         $response = file_get_contents($url);
         $response = json_decode($response);
         if ($response->success) {
-            $this->chytacRobotu = 'Není';
+            $this->chytacRobotu = 'Neni';
             return $this->chytacRobotu;
         }
         else {
