@@ -70,21 +70,21 @@
 
 	<!-- Registrace -->
 	<section class="domain-search-section sc-about-page">
-		<div class="container">
+	<div class="container">
 			<div class="section-title">
 				  <p style="font-weight:bold; text-align:center; font-size:16p">Registrace</p>
-                 <!--  <form action="reg_kontrola.php" method="POST">         -->
+                <form class="contact-form">
                              <table align="center" style="font-size:12px">
-                               <tr><td>Jméno: </td><td><input type="text" name="name"></td></tr>
-                               <tr><td>Příjmení: </td><td><input type="text" name="surname"></td></tr>
-                                <tr><td>E-mail: </td><td><input type="text" name="email"></td></tr>
-                                <tr><td>Heslo: </td><td><input type="password" name="password"></td></tr>
-                                <tr><td>Heslo znovu: </td><td><input type="password" name="password2"></td></tr>
-                                <tr><td colspan="2" align="center"> <a href="./pridat_dite.html"><input type="submit" name="submit1" value= "Pokračovat" ></td></tr>
-                                    
+                              <tr><td><input type="text" name="name" placeholder="Zadejte jméno"></td></tr>
+                               <tr><td><input type="text" name="surname" placeholder="Zadejte příjmení"></td></tr>
+                                <tr><td><input type="text" name="email" placeholder="Zadejte email"></td></tr>
+                                <tr><td><input type="password" name="password" placeholder="Zadejte heslo"></td></tr>
+                                <tr><td><input type="password" name="password2" placeholder="Zadejte znova heslo"></td></tr>
+                                <tr><td colspan="2" align="center"> <a href="./pridat_dite.html"> <button class="site-btn" >Pokračovat</button></td></tr>
+                                         
                               </table>               
-                              <div class="g-recaptcha" data-sitekey="SITE-KEY></div>    
-                       <!--   </form>  -->
+                              <div class="g-recaptcha" data-sitekey="SITE-KEY"></div>    
+                       </form> 
 			</div>
 		</div>
 	</section>

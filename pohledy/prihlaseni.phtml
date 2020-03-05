@@ -1,81 +1,64 @@
-<!-- 
-Ostylovat styly uvnitř template => naučit se s tím dělat, zjistit co který styl dělá.
-Vlézt do manuálu bootsrapu a bádat. Nic jiného se dělat nedá.
-Artisteer je možná dobrý nástroj, ale v tomto projektu nepoužitelný, pokud nevzeme styly co už máme.
-Nechci se tě dotknout, ale kód níže bych označil za nepoužitelný. Vůbec se v tom nevyznám. Příšerný binec s tagy.
--->
-
-<div id="art-main">
-    <div class="art-sheet clearfix">
-            <div class="art-layout-wrapper">
-                <div class="art-content-layout">
-                    <div class="art-content-layout-row">
-                        <div class="art-layout-cell art-content"><div class="art-block clearfix">
-        <div class="art-blockheader">
-            <h3 class="t">Přihlašovací formulář</h3>
-        </div>
-        <div class="art-blockcontent"><form action="#" method="post" name="login" id="form-login">
-  <fieldset class="input" style="border: 0 none;">
-    <p id="form-login-username">
-      <label for="modlgn_username">Email</label>
-      <br />
-      <input id="modlgn_username" type="text" name="email" class="inputbox" alt="email" style="width:100%" />
-    </p>
-    <p id="form-login-password">
-      <label for="modlgn_passwd">Heslo</label>
-      <br />
-      <input id="modlgn_passwd" type="password" name="passwd" class="inputbox" size="18" alt="password" style="width:100%" />
-    </p>
-    <p id="form-login-remember">
-      <label class="art-checkbox">
-      <input type="checkbox" id="modlgn_remember" name="remember" value="yes" alt="Remember Me" />Zapamatovat si mě
-      </label>
-    </p>
-  
-  
-  
-  <html>
-  <head>
-    <title>reCAPTCHA demo: Explicit render after an onload callback</title>
-    <script type="text/javascript">
-      var onloadCallback = function() {
-        grecaptcha.render('html_element', {
-          'sitekey' : '6LfyRd0UAAAAAI5RkrUfyWITFweRCVjAdODrGW2g'
-        });
-      };
-    </script>
-  </head>
-  <body>
-    <form action="http://testupol.funsite.cz/pokus/" method="POST">
-      <div id="html_element"></div>
-      <br>
-       <button class="site-btn">Přihlásit</button>
-       <input type="submit" value="Přihlásit" name="Submit" class="art-button" />
-       <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>
-    </form>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-        async defer>
-    </script>
-
-    
-     
- 
- 
- </fieldset>
-  <ul>
-    <li>
-      <a href="#">Zapoměli jste heslo?</a>
-    </li>
-    <li>
-      <a href="#">Vytvořit účet?</a>
-    </li>
-  </ul>
-</form></div>
-</div>
+<section>
+  <div class="container">
+    <div class="row">
+        <div class="col-4">
+    </div>
+    <div class="col-sm">
+        <form class="contact-form" method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Vaše emailová adresa:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="vas@email.com">
+                        <small id="emailHelp" class="form-text text-muted">Nikomu nesděluj své přihlašovací údaje.</small>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Vaše heslo:</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Heslo">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <p>Nejsi robot?</p>
+                        <div class="g-recaptcha" data-sitekey="6LeAft0UAAAAAGXjGBx00xZgrPc34l_-zIuEYqOa"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Toto udělat lépe přes styly -->
+            <div class="row">
+                <div class="offset-sm-1">
+                    <p></p>
+                        <button type="submit" class="site-btn">Odeslat</button>
+                    <p></p>
+                </div>
+            </div>
+
+        </form>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- Toto udělat lépe přes styly -->
+        <div class="row"><p></p></div>
+          
+        <!-- Sekce s odkazy -->
+        <div class="row">
+            <p>
+                <a href="obnova-hesla">Zapomněl jsem svoje heslo.</a>
+            </p>
+        </div>
+            <div class="row">
+                <p>
+                    <a href="registrace">Nemám ještě svůj účet.</a>
+                </p>
+            </div>
+        </div>
     </div>
-    
-</div>
+  </div>
+    <!-- Odsazení na konci stránky-->
+    <div class="spad">  
     </div>
+</section>

@@ -1,14 +1,34 @@
-<!DOCTYPE html>
-<html lang="zxx">
+﻿<!DOCTYPE html>
+<html lang="cs-cz">
 <head>
-	<title>IT Host - Hosting Template</title>
+	<title><?= $titulek ?></title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Cloud 83 - hosting template ">
-	<meta name="keywords" content="cloud, hosting, creative, html">
+	<meta name="description" content="<?= $popis ?>">
+	<meta name="keywords" content="<?= $klicova_slova ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
-
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="img/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Jednoduchý favicon
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        -->
+        
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -41,218 +61,40 @@
 		</div>
 		<div class="nav-warp">
 			<div class="user-panel">
-				<a href="#">Jméno</a>
+				<a href="#">Jméno</a> 
 				<a href="#">Příjmení</a> |
-                <a href="#">Role</a>
+                <a href="#">Role</a> |
+                <a href="./index.html">Odhlásit</a> 
 			</div>
+    <!--         <div class="user-panel">
+				<a href="prihlaseni">Přihlášení</a> |
+                                <a href="registrace">Registrovat</a>
+			</div>  -->
 			<ul class="main-menu">
-				<li><a href="./index.html">Domů</a></li>
-				<li><a href="./about.html">O projektu</a></li>
-				<li><a href="./blog.html">Školky</a></li>
-				<li><a href="./contact.html">Kontakt</a></li>
-                <li><a href="">Portál</a></li>     <!-- Přidat odkaz na přihlašovací stránku -->
+				<li><a href="domu.html">Domů</a></li>
+				<li><a href="o-projektu">O projektu</a></li>
+				<li><a href="zapojili-se">Zapojili se</a></li>
+				<li><a href="kontakt">Kontakt</a></li>
+         	<!--       <li><a href="">Portál</a></li>      <!-- Přidat odkaz na přihlašovací stránku -->
 			</ul>
 		</div>
 	</header>
 	<!-- Konec hlavičky -->
 
 
-	<!-- Top sekce -->
+		<!-- Top sekce -->
 	<section class="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
 		<div class="container">
-			<h2>Portál</h2>
+		<!--	<h2><?= $nadpis ?></h2>   -->
 		</div>
 	</section>
-	<!-- Top sekce EN -->
+	<!-- Top sekce END -->
 
 
-	<!-- Features section -->
-	<section class="features-section spad">
-		<div class="container">
-			<div class="section-title">
-				<img src="./img/section-title-icon.png" alt="#">
-				<p>Banji</p>
-				<h2>See our features</h2>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6 feature-item">
-					<div class="ft-icon">
-						<i class="flaticon-domain-registration"></i>
-					</div>
-					<h4>Buy your Domain</h4>
-					<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.</p>
-				</div>
-				<div class="col-lg-4 col-md-6 feature-item fi-center-top">
-					<div class="ft-icon">
-						<i class="flaticon-server"></i>
-					</div>
-					<h4>Cloud Database</h4>
-					<p>Ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. </p>
-				</div>
-				<div class="col-lg-4 col-md-6 feature-item">
-					<div class="ft-icon">
-						<i class="flaticon-devices"></i>
-					</div>
-					<h4>SSD-Only</h4>
-					<p>Suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. </p>
-				</div>
-				<div class="col-lg-4 col-md-6 feature-item">
-					<div class="ft-icon">
-						<i class="flaticon-smartphone"></i>
-					</div>
-					<h4>Smart Contacts</h4>
-					<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.</p>
-				</div>
-				<div class="col-lg-4 col-md-6 feature-item">
-					<div class="ft-icon">
-						<i class="flaticon-folder"></i>
-					</div>
-					<h4>Free Support</h4>
-					<p>Ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. </p>
-				</div>
-				<div class="col-lg-4 col-md-6 feature-item">
-					<div class="ft-icon">
-						<i class="flaticon-viral-marketing"></i>
-					</div>
-					<h4>Viral Marketing</h4>
-					<p>Suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. </p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Features section end -->
-
-
-	<!-- Service box section -->
-	<section class="service-box-section">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-4 col-md-6 p-0 service-box">
-					<div class="service-box-text text-white">
-						<h4>Our Mission</h4>
-						<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Inte-ger egestas sit amet neque sed elementum. Fusce ut turpis felis. Etiam pretium pharetra augue, ac porttitor dolor consequat eget. Cras tempor suscipit enim vehicula ultrices. Mauris sed orci blan-dit, rhoncus massa non, tincidunt odio. </p>
-						<a href="#" class="site-btn">Read More</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 p-0 service-box">
-					<div class="service-box-text text-white">
-						<h4>Our Vission</h4>
-						<p>Lacinia ex eleifend orci porttitor, suscipit interdum augue cond-imentum. Etiam pretium turpis eget nibh laoreet iaculis. Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Integer eges-tas sit amet neque sed elementum. Fusce ut turpis felis. Etiam pretium pharetra augue, ac porttitor dolor consequat eget. Cras tempor suscipit enim vehicula ultrices. Mauris sed orci blandit, rhoncus massa non.</p>
-						<a href="#" class="site-btn">Read More</a>
-					</div>
-				</div>
-				<div class="col-lg-4 p-0 service-box">
-					<div class="service-box-image text-white">
-						<img src="img/service.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Service box section end -->
-
-
-	<!-- Faq section -->
-	<section class="faq-section spad">
-		<div class="container">
-			<div class="section-title">
-				<img src="./img/section-title-icon.png" alt="#">
-				<p>The best out there</p>
-				<h2>FAQ</h2>
-			</div>
-			<div id="accordion" class="accordion-area faq-accordion">
-				<div class="panel">
-					<div class="panel-header" id="headingOne">
-						<button class="panel-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Etiam pretium turpis eget nibh laoreet iaculis. Vivamus auctor mi eget odio feugiat. </button>
-					</div>
-					<div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
-									<div class="row">
-										<div class="col-lg-6">
-											<h4>Free Support</h4>
-											<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.Nullam lacinia ex eleifend orciporttitor, suscip-it interdum augue condimentum. Etiam pretium turpis eget eleifend orci porttitornibh laoreet iaculis.</p>
-										</div>
-										<div class="col-lg-6">
-											<img src="./img/faq.jpg" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-header" id="headingTwo">
-						<button class="panel-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Integer egestas sit amet neque sed </button>
-					</div>
-					<div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
-									<div class="row">
-										<div class="col-lg-6">
-											<h4>Free Support</h4>
-											<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.Nullam lacinia ex eleifend orciporttitor, suscip-it interdum augue condimentum. Etiam pretium turpis eget eleifend orci porttitornibh laoreet iaculis.</p>
-										</div>
-										<div class="col-lg-6">
-											<img src="./img/faq.jpg" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-header" id="headingThree">
-						<button class="panel-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Etiam pretium turpis eget nibh laoreet iaculis. Vivamus auctor mi eget odio feugiat.</button>
-					</div>
-					<div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
-									<div class="row">
-										<div class="col-lg-6">
-											<h4>Free Support</h4>
-											<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.Nullam lacinia ex eleifend orciporttitor, suscip-it interdum augue condimentum. Etiam pretium turpis eget eleifend orci porttitornibh laoreet iaculis.</p>
-										</div>
-										<div class="col-lg-6">
-											<img src="./img/faq.jpg" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-header" id="headingFour">
-						<button class="panel-link active" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse3">Vivamus auctor mi eget odio feugiat, quis aliquet velit ornare. Integer egestas sit amet neque sed </button>
-					</div>
-					<div id="collapse4" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
-									<div class="row">
-										<div class="col-lg-6">
-											<h4>Free Support</h4>
-											<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.Nullam lacinia ex eleifend orciporttitor, suscip-it interdum augue condimentum. Etiam pretium turpis eget eleifend orci porttitornibh laoreet iaculis.</p>
-										</div>
-										<div class="col-lg-6">
-											<img src="./img/faq.jpg" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Faq section end -->
+	<!-- Tělo stránky -->
+        <article>
+        </article>
+	<!-- Tělo stránky END -->
 
 		<!-- Zápatí top -->
 	<section class="footer-top-section text-white spad">
@@ -299,11 +141,11 @@
 	<footer class="footer-section">
 		<div class="container">
 			<ul class="footer-menu">
-				<li><a href="./index.html">Domů</a></li>
-				<li><a href="./about.html">O projektu</a></li>
-				<li><a href="./blog.html">Školky</a></li>
-				<li><a href="./contact.html">Kontakt</a></li>
-                <li><a href="./portal.html">Portál</a></li>
+				<li><a href="domu.html">Domů</a></li>
+				<li><a href="o-projektu">O projektu</a></li>
+				<li><a href="zapojili-se">Zapojili se</a></li>
+				<li><a href="kontakt">Kontakt</a></li>
+         	<!--       <li><a href="">Portál</a></li>      <!-- Přidat odkaz na přihlašovací stránku -->
 			</ul>
 			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>

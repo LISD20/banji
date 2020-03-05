@@ -59,6 +59,11 @@ p {
 	color: #585858;
 	line-height: 2;
 }
+.p2 {
+    font-size: 25px;
+    color: #585858;
+    line-height: 2;
+}
 
 img {
 	max-width: 100%;
@@ -523,7 +528,7 @@ ol {
 .header-section {
 	position: absolute;
 	width: 100%;
-	padding-top: 25px;
+	padding-top: 0px;
 	z-index: 99;
 }
 
@@ -586,7 +591,7 @@ ol {
 ---------------------*/
 
 .hero-section {
-	height: 835px;
+	height: 935px;
 	overflow: hidden;
 }
 
@@ -983,7 +988,7 @@ ol {
 }
 
 .footer-top-section {
-	background: #200545;
+	background: #1c284a;
 }
 
 .footer-widget .fw-title {
@@ -1059,7 +1064,7 @@ ol {
 ---------------------*/
 
 .footer-section {
-	background: #1b043b;
+	background: #101b3d;
 	overflow: hidden;
 	padding: 20px 0px;
 }
@@ -1434,6 +1439,7 @@ ol {
 
 .contact-form input[type=text],
 .contact-form input[type=email],
+.contact-form input[type=password],
 .contact-form textarea {
 	width: 100%;
 	height: 56px;

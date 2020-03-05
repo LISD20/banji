@@ -7,8 +7,28 @@
 	<meta name="keywords" content="cloud, hosting, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
-
+        <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="img/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Jednoduchý favicon
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        -->
+        
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -36,7 +56,7 @@
 
 	<!-- Hlavička -->
 	<header class="header-section">
-		<a href="./index.html" class="site-logo"><img src="./img/logo.png" alt=""></a>
+		<a href="domu.html" class="site-logo"><img src="./img/logo.png" alt=""></a>
 		<div class="nav-switch">
 			<i class="fa fa-bars"></i>
 		</div>
@@ -63,8 +83,8 @@
 			<div class="hero-content text-white">
 				<div class="row">
 					<div class="col-lg-6 pr-0">
-						<h2>Unbeatable Offers</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. </p>
+						<h3>Vítejte na portále BANJI</h3>
+						<p>Zde bude motivační text. Delší. Jinak bude nutné upravit nastavení sloupce v bootstrap. </p>
 					</div>
 				</div>
 				<div class="hero-rocket">
@@ -113,10 +133,37 @@
 		</div>
 	</section>
 	<!-- Sekce pod raketou END-->
+        
+        <!-- SlideShow -->
+        <section>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/bg.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/bg.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/bg.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+            <div class="spad">  
+    </div>
+        </section>
 
+       
 
-
-	<!-- bylo tu vyhledávání -->
+	<!-- bylo tu vyhledávání 
 	<section class="domain-search-section spad set-bg" data-setbg="img/domain-bg.jpg">
 		<div class="container">
 			<div class="section-title st-white">
@@ -127,7 +174,7 @@
 
 		</div>
 	</section>
-	<!-- bylo tu vyhledávání END -->
+	 bylo tu vyhledávání END -->
 
 	<!-- Zápatí top -->
 	<section class="footer-top-section text-white spad">

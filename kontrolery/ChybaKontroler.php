@@ -9,7 +9,7 @@ class ChybaKontroler extends Kontroler {
         //Hlavička stránky
         $this->hlavicka['titulek'] = 'Chyba 404';
         //Nadpis stránky
-        $this->hlavicka['nadpis'] = 'Chyba';
+        $this->hlavicka['nadpis'] = 'Chyba 404';
         //Nastavení šablony
         $this->pohled = 'chyba';
     }
