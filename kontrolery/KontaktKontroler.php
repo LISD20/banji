@@ -12,11 +12,11 @@ class KontaktKontroler extends Kontroler {
         if ($_POST) {
             try {
                 $odesilacEmailu = new OdesilacEmailu();
-                $odesilacEmailu->odesliPoKontroleRobota("plenca@gmail.com", $_POST['predmet'], $_POST['zprava'],$_POST['email']);
+                $odesilacEmailu->odesliPoKontroleNaRobota("plenca@gmail.com", $_POST['predmet'], $_POST['zprava'],$_POST['email']);
                 #$this-> //Dopsat zaslání zprávy o úspěšném odeslání.
-                #$this->presmeruj('kontakt');
+                $this->presmeruj('kontakt');
             } 
-            catch (Exception $ex) {
+            catch (ChybaUzivatele $chyba) {
                 echo 'Chyba';
             }
         }
