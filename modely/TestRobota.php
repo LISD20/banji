@@ -9,7 +9,7 @@ class TestRobota {
     public $chytacRobotu;
     
     public function zkontrolujZdaToNeniRobot() {
-        $secretKey = "6Lfcpd0UAAAAACRmNlKjmQjtPc80ioWQOOjsOsvC";
+        $secretKey = "DODAT TAJNY KOD";
         $responseKey = $_POST['g-recaptcha-response'];
         //$userIP = $_SERVER['REMOTE_ADDR'];
 

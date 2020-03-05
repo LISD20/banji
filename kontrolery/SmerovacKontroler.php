@@ -63,7 +63,7 @@ class SmerovacKontroler extends Kontroler {
        if (file_exists('kontrolery/' . $tridaKontroleru . '.php'))
            $this->kontroler = new $tridaKontroleru;
        else
-           $this->presmeruj ('chyba');
+           $this->presmeruj('chyba');
        // Na vnořeném kontroleru zavoláme metodu zpracuj a necháme ho provést jeho logiku
        $this->kontroler->zpracuj($naparsovanaURL);
        
